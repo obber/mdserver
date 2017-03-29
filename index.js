@@ -17,4 +17,4 @@ const {
   directory
 } = commandLineArgs(optionDefinitions);
 
-init(port, path.resolve(__dirname, directory));
+init(port, path.resolve(process.cwd(), directory));
