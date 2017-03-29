@@ -1,3 +1,7 @@
 include includes/header.pug
-body
-  div!= content
+
+div(class='row')
+  include includes/sidebar.pug
+  div(class='large-9 columns content-right')!= content
+
+include includes/footer.pug

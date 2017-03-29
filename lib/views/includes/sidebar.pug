@@ -1,0 +1,18 @@
+mixin parseChildren(currentPath, children, first)
+  ul
+    if first
+      li
+        a(href='/')= 'home'
+    each child in children
+      - var childWithoutExtension = child.name.slice(0, child.name.length - 3);
+      if child.children
+        li
+          a(href=currentPath + child.name)= child.name
+            +parseChildren(currentPath + child.name + '/', child.children)
+      else
+        if child.name !== 'index.md'
+          li
+            a(href=currentPath + childWithoutExtension)= childWithoutExtension
+
+div(class='large-3 columns content-left navigation')
+  +parseChildren('/', tree.children, true)

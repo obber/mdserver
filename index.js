@@ -5,7 +5,7 @@ const path = require('path');
 const express = require('express');
 const commandLineArgs = require('command-line-args')
 
-const init = require('./lib/server');
+const init = require('./lib/init');
 
 const optionDefinitions = [
   { name: 'directory', alias: 'd', type: String },

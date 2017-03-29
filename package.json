@@ -16,6 +16,7 @@
     "babel-register": "^6.24.0",
     "bluebird": "^3.5.0",
     "command-line-args": "^4.0.2",
+    "directory-tree": "^1.2.1",
     "express": "^4.15.2",
     "jstransformer-markdown-it": "^2.0.0",
     "marked": "^0.3.6",
