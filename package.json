@@ -8,7 +8,7 @@
   "bin": {
     "pubmd": "index.js"
   },
-  "keywords": [],
+  "keywords": ["markdown", "server", "static"],
   "author": "",
   "license": "ISC",
   "dependencies": {
