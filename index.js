@@ -19,4 +19,4 @@ const {
   directory
 } = commandLineArgs(optionDefinitions);
 
-init(port, path.resolve(process.cwd(), directory));
+init(port || 3789, path.resolve(process.cwd(), directory));
