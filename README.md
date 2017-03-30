@@ -22,12 +22,12 @@ sample
         └── qwer.md
 ```
 
-You can run a webserver which shows this contents with this `mdserver` CLI:
+You can run a webserver which shows this contents with this `pubmd` CLI:
 
 ```
-mdserver --directory sample/ --port 3000
+pubmd --directory sample/ --port 3000
 # or
-md server -d sample/ -p 3000
+pubmd -d sample/ -p 3000
 ```
 
 Navigate to the port you specify and you'll see a page which looks like this:
