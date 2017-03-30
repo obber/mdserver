@@ -2,6 +2,8 @@
 
 **Version**: 0.1.0
 
+**NOTE: This is an early prototype. Work is in-progress!**
+
 Given a directory, `sample`, which looks like this:
 
 ```plaintext
