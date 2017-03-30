@@ -28,3 +28,6 @@ mdserver --directory sample/ --port 3000
 md server -d sample/ -p 3000
 ```
 
+Navigate to the port you specify and you'll see a page which looks like this:
+
+![screenshot](docs/screenshot.png)
