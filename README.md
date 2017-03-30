@@ -2,7 +2,7 @@
 
 Serve a directory of markdown files as a static webserver.
 
-**Version**: 1.0.11
+**Version**: 1.0.2
 
 **NOTE: This is an early prototype. Work is in-progress!**
 
