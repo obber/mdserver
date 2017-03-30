@@ -1,8 +1,18 @@
 # Simple Markdown Server
 
-**Version**: 0.1.0
+Serve a directory of markdown files as a static webserver.
+
+**Version**: 1.0.11
 
 **NOTE: This is an early prototype. Work is in-progress!**
+
+## Installation
+
+```
+npm install -g pubmd
+```
+
+## Usage
 
 Given a directory, `sample`, which looks like this:
 
@@ -26,10 +36,17 @@ You can run a webserver which shows this contents with this `pubmd` CLI:
 
 ```
 pubmd --directory sample/ --port 3000
-# or
-pubmd -d sample/ -p 3000
 ```
 
 Navigate to the port you specify and you'll see a page which looks like this:
 
 ![screenshot](docs/screenshot.png)
+
+## Flags
+
+`*` denotes required flags
+
+```
+* --directory (-d) = path to directory of markdown files
+  --port      (-p) = port number for the server to run on
+```
