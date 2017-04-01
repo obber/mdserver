@@ -8,16 +8,12 @@ body {
   background-color: #fff;
 }
 
-.content-left,
-.content-right {
-  min-height: 100%;
-}
-
 .content-left {
   padding: 40px 50px;
 }
 
 .content-right {
+  min-height: 100%;
   border-left: 1px solid #ddd;
   padding: 40px 80px;
 }

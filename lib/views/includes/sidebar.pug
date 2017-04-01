@@ -1,16 +1,24 @@
 mixin parseChildren(currentPath, children, first)
   ul
+    // first level should be labeled 'home' instead of 'index' or '/'
     if first
       li
         a(href='/')= 'home'
     each child in children
       - var childWithoutExtension = child.name.slice(0, child.name.length - 3);
+      // if its a directory, render it
       if child.children
+        // as long as it's not a reserved directory named _assets 
         if child.name !== '_assets'
           li
-            a(href=currentPath + child.name)= child.name
-              +parseChildren(currentPath + child.name + '/', child.children)
+            if child.indexed
+              a(href=currentPath + child.name)= child.name
+            else
+              = child.name
+            // recursively render the directory's children
+            +parseChildren(currentPath + child.name + '/', child.children)  
       else
+        // render only non-index files
         if child.name !== 'index.md'
           li
             a(href=currentPath + childWithoutExtension)= childWithoutExtension
