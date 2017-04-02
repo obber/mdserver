@@ -3,7 +3,8 @@
   "version": "1.1.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:styles": "node-sass -w lib/styles/main.scss -o lib/assets/ --source-map true"
   },
   "bin": {
     "pubmd": "index.js"
@@ -29,5 +30,8 @@
     "marked": "^0.3.6",
     "pug": "^2.0.0-beta11",
     "remove-ext": "^1.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
   }
 }
