@@ -1,13 +1,11 @@
 body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 14px;
+  font-weight: light;
+  letter-spacing: 0.2px;
 
   @include mq('sm') {
     font-size: 16px;
-  }
-
-  @include mq('md') {
-    font-size: 18px;
   }
 }
 
@@ -21,7 +19,7 @@ h6 {
 }
 
 p {
-  line-height: 1.45;
+  line-height: 1.55;
 }
 
 h1 {
@@ -43,4 +41,24 @@ a {
   &:active {
     color: palette('blue', -10);
   }
+}
+
+code,
+code[class*=language-],
+code[class*=language-] {
+  font-size: 0.95rem;
+  font-family: Consolas, Menlo, Courier New, monospace;
+}
+
+code {
+  border: 1px solid palette('red', 30);
+  border-radius: 3px;
+  background-color: palette('red', 42);
+  color: palette('red', -10);
+  padding: 2px 5px;
+}
+
+pre code {
+  border: none;
+  padding: 0;
 }

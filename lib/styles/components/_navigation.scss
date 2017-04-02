@@ -18,14 +18,14 @@
       padding: 11px 0;
       border-bottom: 1px solid palette('gray', -5);
     }
+
+    a:hover {
+      color: palette('blue');
+    }
     
     a > li {
       &:hover {
         background-color: palette('gray');
-      }
-
-      &:active {
-        background-color: palette('gray', -5);
       }
     }
 
@@ -33,5 +33,4 @@
       color: palette('gray', -15);
     }
   }
-
 }
